@@ -1,21 +1,15 @@
 <div class="_m-nav-wrapper">
     <ul class="_nav-items">
-            <li class="_nav-item active">
-                <a href="index.html">ARTICLES</a>
-            </li>
-            <li class="_nav-item">
-                <a href="../brands/index.html">BRANDS</a>
-            </li>
-            <li class="_nav-item">
-                <a href="../resources/index.html">RESOURCES</a>
-            </li>
-            <li class="_nav-item">
-                <a href="../careers/index.html">CAREERS</a>
-            </li>
-
-        <!-- 移动端的搜索按钮，pc的时候为隐藏状态，功能跟._nav-search一样 -->
+	<li class="_nav-item<?php if($this->is('index')): ?> active<?php endif ?>">
+        <a href="<?php $this->options->siteUrl(); ?>">ARTICLES</a>
+    </li>
+	<?php $this->widget('Widget_Contents_Page_List')->to($pages); while($pages->next()): ?>
+    <li class="_nav-item<?php if($this->is('page', $pages->slug)): ?> active<?php endif; ?>">
+        <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
+    </li>
+    <?php endwhile; ?>
         <div class="nav-item -m-search">
-            <a href="index.html#/search/" data-action="toggle" data-args="body" data-cssclass="xxx"></a>
+            <a data-action="toggle" data-args="body" data-cssclass="xxx"></a>
         </div>
     </ul>
 </div>
@@ -24,31 +18,22 @@
     <div class="_header-wrapper">
         <nav id="navigator" class="mod_site_nav nav-animate-item js-nav-state">
             <div class="_nav-logo">
-                <a href="../index.html" class="_nav-flower" ></a>
+                <a href="<?php $this->options->siteUrl(); ?>" class="_nav-flower" style="background:url(<?php $this->options->logo(); ?>) no-repeat center center"></a>
                 <!-- <a href="/" class="js-nav-isux _nav-isux"></a> -->
             </div>
             <!-- pc端的结构 -->
-            <div class="_nav-wrapper">
+			<div class="_nav-wrapper">
                 <ul class="_nav-items">
-                        <li class="_nav-item active">
-                            <a href="index.html">ARTICLES</a>
-                        </li>
-                        <li class="_nav-item">
-                            <a href="../brands/index.html">BRANDS</a>
-                        </li>
-                        <li class="_nav-item">
-                            <a href="../resources/index.html">RESOURCES</a>
-                        </li>
-                        <li class="_nav-item">
-                            <a href="../careers/index.html">CAREERS</a>
-                        </li>
-                    <!-- 移动端的搜索按钮，pc的时候为隐藏状态，功能跟._nav-search一样 -->
-                    <div class="nav-item -m-search">
-                        <a href="index.html#/search/" data-action="toggle" data-args="body" data-cssclass="xxx"></a>
-                    </div>
-                </ul>
+			<li class="_nav-item<?php if($this->is('index')): ?> active<?php endif ?>">
+        <a href="<?php $this->options->siteUrl(); ?>">ARTICLES</a>
+    </li>
+<?php $this->widget('Widget_Contents_Page_List')->to($pages); while($pages->next()): ?>
+    <li class="_nav-item<?php if($this->is('page', $pages->slug)): ?> active<?php endif; ?>">
+        <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
+    </li>
+<?php endwhile; ?>
+</ul>
             </div>
-
             <!-- pc端的搜索按钮，移动端时为隐藏状态 -->
             <div class="_nav-search">
                 <a data-action="toggle" data-args="body" data-cssclass="xxx"></a>
