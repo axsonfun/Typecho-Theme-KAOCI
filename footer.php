@@ -18,5 +18,7 @@
 <script src="<?php $this->options->themeUrl('detail.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('clamp.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('articles.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('brands.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('resources.js'); ?>"></script>
 </body>
 </html>

@@ -1678,7 +1678,7 @@ var mosaicTransition = {
 			}, timeout || 100);
 		},
 		css: function () { // 加载 search.css
-			$('<link href="/static/css/search.css" rel="stylesheet">').appendTo('head');
+			
 		},
 		reset: function () { // 复位
 			var me = this;

@@ -24,6 +24,8 @@
 <link rel="stylesheet" href="<?php $this->options->themeUrl('articles.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('search.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('detail.css'); ?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('brands.css'); ?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('resources.css'); ?>">
 </head>
 <body>
 <?php include('header.php'); ?>

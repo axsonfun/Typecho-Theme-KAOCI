@@ -3,18 +3,28 @@
 <!-- 文章详情页 -->
 <div class="_main_content">
     <!-- 前言模块 -->
-	<?php $c='cover'.$this->options->covershow.'.php';include($c); ?>
-       <div class="editable">
-            <section class="_mod_content _mod_editor"><br><?php $this->content(); ?>
+    <section class="_mod_introduce _mod_editor js-mod-introduce">
+
+        <div class="_introduce_title_wrapper show-animate-item">
+            <div class="_article_title_wrapper">
+                <div class="_introduce_title js-intro-title"><?php $this->title() ?></div>
+            </div>
+            <div class="_public_line caretColor" ></div>
+            <div class="_introduce_tag js-intro-tag" ><?php $this->category(',', false); ?></div>
+        </div>
+        
+        <div class="_public_paragraph js-intro-content show-animate-item"><?php $this->fields->jianyao(); ?></div>
+
+        <div class="_public_banner js-intro-banner js-defualt-banner show-animate-item"><img class="pic js-pic-banner clip-animate-item block-item" data-banner-src="<?php $this->fields->toutu(); ?>"></div>
+    
+    </section>
+
+    <div class="editable" id="editor2">
+            <section class="_mod_content _mod_editor"><?php $this->content(); ?>
             </section>
     </div>
     <section class="_mod_stat show-animate-item">
         <div class="_stat_wrapper">
-            
-            <div class="_article_date">
-                <span class="date" style="text-transform:uppercase"><?php $this->date('F j, Y'); ?></span>
-            </div>
-
             <div class="_article_stat">
 
                 <ul class="_stat_list">

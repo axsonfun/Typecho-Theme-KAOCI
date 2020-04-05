@@ -1,11 +1,12 @@
+img{display:block;margin:0 auto;max-width:100%}
 @font-face{
 	font-family:'Gotham-Medium';
-	src:url('../fonts/Gotham-Medium.otf');
-	src:url('../fonts/Gotham-Medium.eot?') format('embedded-opentype'),
-		url('../fonts/Gotham-Medium.woff2') format('woff2'),
-		url('../fonts/Gotham-Medium.woff') format('woff'),
-		url('../fonts/Gotham-Medium.ttf') format('truetype'),
-		url('../fonts/Gotham-Medium.svg') format('svg');	
+	src:url('https://isux.tencent.com/static/fonts/Gotham-Medium.otf');
+	src:url('https://isux.tencent.com/static/fonts/Gotham-Medium.eot?') format('embedded-opentype'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Medium.woff2') format('woff2'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Medium.woff') format('woff'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Medium.ttf') format('truetype'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Medium.svg') format('svg');	
 
 	font-weight:normal;
 	font-style:normal;
@@ -13,12 +14,12 @@
 }
 @font-face{
 	font-family:'Gotham-Book';
-	src:url('../fonts/Gotham-Book.otf');
-	src:url('../fonts/Gotham-Book.eot?') format('embedded-opentype'),
-		url('../fonts/Gotham-Book.woff2') format('woff2'),
-		url('../fonts/Gotham-Book.woff') format('woff'),
-		url('../fonts/Gotham-Book.ttf') format('truetype'),
-		url('../fonts/Gotham-Book.svg') format('svg');	
+	src:url('https://isux.tencent.com/static/fonts/Gotham-Book.otf');
+	src:url('https://isux.tencent.com/static/fonts/Gotham-Book.eot?') format('embedded-opentype'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Book.woff2') format('woff2'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Book.woff') format('woff'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Book.ttf') format('truetype'),
+		url('https://isux.tencent.com/static/fonts/Gotham-Book.svg') format('svg');	
 
 	font-weight:normal;
 	font-style:normal;
@@ -29,21 +30,21 @@ section._mod_content._mod_editor p{font-weight:500!important}
 ::-moz-selection{background:#ddd;color:#000;text-shadow:none;}
 ::selection{background:#ddd;color:#000;text-shadow:none;}
 ul,li{list-style: none;}
-h1,h2,h3{font-weight: normal;}
+h1,h2,h3{font-weight: normal}
 
 html,body{
     font-family:
-    /* 西文 */
+
     'Gotham-Book', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
     "Helvetica Neue", Helvetica, Arial,
-    /* 中文 */
+
     "PingFang SC", "Hiragino Sans GB",
     "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
     background: #fff;
     font-size: 12px;
     color: #000;
 }
-
+del{text-decoration:line-through!important}
 body{
     position: relative;
 }
@@ -146,13 +147,13 @@ body{
     width: 110px;
     height: 100%;
     /* background:  url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2ODIuNjIgMTczLjEyIj48dGl0bGU+6LWE5rqQIDE8L3RpdGxlPjxnIGlkPSLlm77lsYJfMiIgZGF0YS1uYW1lPSLlm77lsYIgMiI+PGcgaWQ9IuWbvuWxgl8xLTIiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiPjxwYXRoIGQ9Ik0yNzIsMTM2LjA2SDI1NS4zVjM3SDI3MloiLz48cGF0aCBkPSJNMzY0LjcxLDEzNy43MmMtOS42OSwwLTE4LjExLTIuMS0yNS02LjI0bC0uNzYtLjQ1LDYuMi0xNC4wNywxLC42NWE0My41Nyw0My41NywwLDAsMCwyMC43Miw2LjE5YzUuNDgsMCw5LjkyLTEuMzUsMTMuMi00YTEyLjI1LDEyLjI1LDAsMCwwLDQuODYtMTAsMTQuOCwxNC44LDAsMCwwLTIuNzMtOC41M2MtMS44Mi0yLjYzLTYuNTktNS42LTE0LjE3LTguODJsLTguNjctMy42NGMtNy41LTMuMTQtMTIuODMtNy0xNS44Ni0xMS4zNWEyNy40MSwyNy40MSwwLDAsMS00LjU1LTE1Ljg2LDIzLjU5LDIzLjU5LDAsMCwxLDguODktMTguNzhjNS44NS00LjksMTMuNDQtNy4zOCwyMi41Ny03LjM4LDEyLjI1LDAsMjAuNTgsMS43NywyNS40Nyw1LjQybC42LjQ1LTUsMTMuMzktMS0uNjhhMzUsMzUsMCwwLDAtOC43Mi0zLjU5LDM4LjczLDM4LjczLDAsMCwwLTEwLjktMS43NWMtNC43MiwwLTguNDcsMS4yMS0xMS4xNSwzLjU5YTExLjU4LDExLjU4LDAsMCwwLTQsOS4xMiwxMy44OCwxMy44OCwwLDAsMCwxLjQ0LDYuMzEsMTMuNDEsMTMuNDEsMCwwLDAsNCw0Ljc0YzEuNzcsMS4zMSw1LjUxLDMuMjEsMTEuMSw1LjY1TDM4MSw4MS44M2M3LjUxLDMuMiwxMi44Niw3LjEsMTUuOTEsMTEuNThzNC42MywxMC4yNSw0LjYzLDE3LjE2YzAsNy41Ny0zLjQxLDE0LjA3LTEwLjEyLDE5LjMzUzM3NS43OCwxMzcuNzIsMzY0LjcxLDEzNy43MloiLz48cGF0aCBkPSJNNDk5LjQ4LDEzNy43MmMtMTIuMjUsMC0yMS44NS0yLjc5LTI4LjUyLTguMzFzLTEwLjE1LTEzLjYyLTEwLjE1LTIzLjk1VjM3aDE2LjcxdjY3LjQyYTE3Ljc5LDE3Ljc5LDAsMCwwLDUuOTMsMTMuODZjNCwzLjYzLDkuMyw1LjQ3LDE1Ljg4LDUuNDcsNywwLDEyLjUxLTEuNzksMTYuNDgtNS4zMXM1LjkyLTguMjQsNS45Mi0xNC4zNlYzN2gxNi43MXY2OC40OGMwLDEwLjA3LTMuNTUsMTgtMTAuNTYsMjMuNzJTNTExLjM5LDEzNy43Miw0OTkuNDgsMTM3LjcyWiIvPjxwYXRoIGQ9Ik02ODIuNjIsMTM2LjA2SDY2NC41N0w2MzguMzUsOTcuOTRsLTI0LjIxLDM4LjEzSDU5Ni45MWwzMi40My01MS4zM0w1OTkuNSwzN2wxNi44Ni4wOCwyMi41MSwzNS44N0w2NjMuNjksMzdoMTcuMjVMNjQ2Ljc2LDg1WiIvPjxwYXRoIGQ9Ik0xMS4yLDExLjIxYTM4LjI3LDM4LjI3LDAsMCwwLDAsNTQuMTFsMTUsMTVoMzFMNDkuODYsNzNsMCwwTDI2LjY3LDQ5Ljg2YTE2LjQsMTYuNCwwLDAsMSwyMy4xOS0yMy4yTDgwLjMyLDU3LjEzVjI2LjJsLTE1LTE1YTM4LjI4LDM4LjI4LDAsMCwwLTU0LjEyLDAiLz48cGF0aCBkPSJNMTQ2LjUxLDI2LjY3YTE2LjQyLDE2LjQyLDAsMCwxLDAsMjMuMTlMMTIzLjM0LDczbDAsMEwxMTYsODAuMjloMzFsMTUtMTVBMzguMjcsMzguMjcsMCwwLDAsMTA3Ljg1LDExLjJsLTE1LDE1VjU3LjEybDMwLjQ2LTMwLjQ2YTE2LjQyLDE2LjQyLDAsMCwxLDIzLjE5LDAiLz48cGF0aCBkPSJNMTQ3LDkyLjgzSDExNmw3LjI4LDcuMjgsMCwwLDIzLjE2LDIzLjE3YTE2LjQsMTYuNCwwLDAsMS0yMy4xOSwyMy4yTDkyLjg2LDExNnYzMC45M2wxNSwxNUEzOC4yNywzOC4yNywwLDAsMCwxNjIsMTA3LjhaIi8+PHBhdGggZD0iTTI2LjY3LDE0Ni40NWExNi40MiwxNi40MiwwLDAsMSwwLTIzLjE5bDIzLjE3LTIzLjE3LDAsMCw3LjI4LTcuMjhoLTMxbC0xNSwxNWEzOC4yNywzOC4yNywwLDAsMCw1NC4xMiw1NC4xMWwxNS0xNVYxMTZMNDkuODYsMTQ2LjQ1YTE2LjQyLDE2LjQyLDAsMCwxLTIzLjE5LDAiLz48L2c+PC9nPjwvc3ZnPg==) 0% 50% no-repeat; */
-    background: url(../images/logo.svg) no-repeat center center;
+    background: url(https://isux.tencent.com/static/images/logo.svg) no-repeat center center;
 }
 .mod_site_nav ._nav-logo ._nav-isux{
     display: inline-block;
     width: 75px;
     height: 28px;
-    background: url(../images/-isux-isux.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-isux-isux.svg) 50% 50% no-repeat;
     transition: all 0.2s ease-out;
 }
 .mod_site_nav ._nav-search a,
@@ -232,16 +233,16 @@ nav ._nav-wrapper a:hover:after{
     margin: 0 20px;
 }
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-vimeo{
-    background: url(../images/-footer-vimeo.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-footer-vimeo.svg) 50% 50% no-repeat;
 }
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-facebook{
-    background: url(../images/-footer-facebook.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-footer-facebook.svg) 50% 50% no-repeat;
 }
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-wechat{
-    background: url(../images/-footer-wechat.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-footer-wechat.svg) 50% 50% no-repeat;
 }
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-weibo{
-    background: url(../images/-share-weibo.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-share-weibo.svg) 50% 50% no-repeat;
     /* width: 28px;
     height: 28px; */
     /* background-size: 28px 28px; */
@@ -251,22 +252,22 @@ nav ._nav-wrapper a:hover:after{
 }
 
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-ins{
-    background: url(../images/-share-ins.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-share-ins.svg) 50% 50% no-repeat;
     /* background-size: 28px 28px; */
 }
 
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-behance{
-    background: url(../images/-share-behance.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-share-behance.svg) 50% 50% no-repeat;
     /* background-size: 34px 34px; */
 }
 
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-zcool{
-    background: url(../images/-share-zcool.svg) 50% 50% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-share-zcool.svg) 50% 50% no-repeat;
     /* background-size: auto 18px; */
 }
 
 .mod_site_footer ._social ._inner-wrapper ._social-media-links .-medium{
-    background: url(../images/-share-medium.svg) 100% 100% no-repeat;
+    background: url(https://isux.tencent.com/static/images/-share-medium.svg) 100% 100% no-repeat;
     background-size: cover;
     /* background-size: auto 18px; */
 }
@@ -514,7 +515,7 @@ nav ._nav-wrapper a:hover:after{
         display: block;
         width: 24px;
         height: 24px;
-        background: url(../images/-header-search.svg) 50% 50% no-repeat;
+        background: url(https://isux.tencent.com/static/images/-header-search.svg) 50% 50% no-repeat;
         background-size: 24px 24px;
     }
     .mod_site_nav ._nav-logo,
