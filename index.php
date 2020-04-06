@@ -2,7 +2,7 @@
 /**
  * 非黑即白大气设计类模板
  * 
- * @package ZAOCI
+ * @package KAOCI
  * @author KicoModo
  * @version 1.0
  * @link https://www.kicomodo.com
