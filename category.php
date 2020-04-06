@@ -3,7 +3,7 @@
 	<div class="article-container">
 		<div class="article" >
 			<div class="article-list">
-					<a class="article-single show-animate-item">
+					<a class="article-single show-animate-item" style="max-width:100%!important">
 						<div class="head-img">
 							<div class="img-wrap">
 								<div class="chief-img monochrome lazy clip-animate-item" data-src="<?php echo $this->getDescription(); ?>"></div>

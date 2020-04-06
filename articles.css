@@ -260,7 +260,7 @@
 }*/
 
 .article-single{
-	max-width: 400px;
+	max-width: 33.333333333333333333%;
 
 	display: flex;
 	flex-direction: column;

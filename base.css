@@ -1,4 +1,9 @@
-img{display:block;margin:0 auto;max-width:100%}
+img{display:block;margin:0 auto;max-width:100%}.read-more:hover .s {
+    animation: arrowDown 1s cubic-bezier(.8,0,.2,1) 300ms;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+}.popo{display:none}#popo{display:none;height: 0px;}
 @font-face{
 	font-family:'Gotham-Medium';
 	src:url('https://isux.tencent.com/static/fonts/Gotham-Medium.otf');
@@ -527,11 +532,8 @@ nav ._nav-wrapper a:hover:after{
     }
     .mod_site_nav ._nav-logo ._nav-flower{
         width: 74px;
-    }
-
-    .mod_site_nav ._nav-search{
-        display: none;
-    }
+    }.article-single{max-width:50%!important}
+.popo{display: block!important}#popo{display:block!important}
     /* 移动端 header logo 加载过慢，所以把 svg 换成 datauri 来引用，不用http请求 */
     /* .mod_site_nav ._nav-logo ._nav-flower{
         display: inline-block;
@@ -652,7 +654,7 @@ nav ._nav-wrapper a:hover:after{
 @media screen and (min-width: 440px) and (max-width: 880px){
     ._fake-header{
         width: 100%;
-        height: 120px;
+        height: 160px;
     }
     .mod_site_nav{
         height: 120px;

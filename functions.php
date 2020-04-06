@@ -8,6 +8,8 @@ function themeConfig($form) {
     $form->addInput($miaoshu);
 	$guanjianci = new Typecho_Widget_Helper_Form_Element_Text('guanjianci', NULL, NULL, _t('关键词'), _t(''));
     $form->addInput($guanjianci);
+	$dibu = new Typecho_Widget_Helper_Form_Element_Text('dibu', NULL, NULL, _t('底部'), _t(''));
+    $form->addInput($dibu);
 	$stbt = new Typecho_Widget_Helper_Form_Element_Text('stbt', NULL, NULL, _t('首推标题'), _t(''));
     $form->addInput($stbt);
 	$stjy = new Typecho_Widget_Helper_Form_Element_Text('stjy', NULL, NULL, _t('首推简要'), _t(''));

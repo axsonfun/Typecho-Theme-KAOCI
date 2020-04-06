@@ -1,6 +1,6 @@
 <?php
 /**
- * 这是 Typecho 0.9 系统的一套默认皮肤
+ * 非黑即白大气设计类模板
  * 
  * @package ZAOCI
  * @author KicoModo
@@ -13,7 +13,7 @@
 	<div class="article-container">
 		<div class="article" >
 			<div class="article-list">
-					<a href="<?php $this->options->stlj(); ?>" class="article-single show-animate-item">
+					<a href="<?php $this->options->stlj(); ?>" class="article-single show-animate-item" style="max-width:100%!important">
 						<div class="head-img">
 							<div class="img-wrap">
 								<div class="chief-img monochrome lazy clip-animate-item" data-src="<?php $this->options->sttt(); ?>"></div>
